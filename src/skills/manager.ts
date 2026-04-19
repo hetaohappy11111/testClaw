@@ -124,7 +124,8 @@ export class SkillManager {
   private loadPromptSkill(base: BaseSkill, content: string): PromptSkill {
     const patterns = this.extractPatterns(content);
     const examples = this.extractExamples(content);
-
+console.log('patterns', patterns);
+console.log('examples', examples);
     return {
       ...base,
       type: 'prompt',
