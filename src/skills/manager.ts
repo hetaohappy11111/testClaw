@@ -211,6 +211,11 @@ console.log('examples', examples);
     // In production, use chokidar or fs.watch
   }
 
+  // Get count of all skills
+  getSkillCount(): number {
+    return this.skills.size;
+  }
+
   // Reload a specific skill
   async reloadSkill(name: string): Promise<boolean> {
     const skillPath = path.join(this.config.skillsDir, name, 'SKILL.md');
