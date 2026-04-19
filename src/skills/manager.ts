@@ -206,6 +206,11 @@ console.log('examples', examples);
     return examples;
   }
 
+  // Get all skill names
+  getAllSkillNames(): string[] {
+    return Array.from(this.skills.keys());
+  }
+
   private async setupWatcher(): Promise<void> {
     // Simple polling for now
     // In production, use chokidar or fs.watch
