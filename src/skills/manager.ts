@@ -171,6 +171,13 @@ console.log('examples', examples);
     };
   }
 
+  // Get all skills filtered by category
+  getSkillsByCategory(category: string): BaseSkill[] {
+    return Array.from(this.skills.values()).filter(
+      skill => skill.category === category
+    );
+  }
+
   private extractPatterns(content: string): string[] {
     const patterns: string[] = [];
     const match = content.match(/## (When to Use|Usage Examples)[\s\S]*?(?:\n##|$)/i);
