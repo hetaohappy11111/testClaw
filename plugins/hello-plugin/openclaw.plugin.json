@@ -1,0 +1,8 @@
+{
+  "id": "hello-plugin",
+  "name": "Hello Plugin",
+  "version": "1.0.0",
+  "description": "A simple plugin that demonstrates plugin loading",
+  "tools": [],
+  "hooks": []
+}
